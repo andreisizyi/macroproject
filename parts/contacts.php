@@ -70,7 +70,7 @@ if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         </div>
     </div>
 <?php endwhile;
-//AIzaSyBFH8ZQVDvhcnrh_lPHFrDpzZmIbLmaMqY
+
 $googleapi = get_field('googleapi', 'option');
 wp_enqueue_script('map', get_stylesheet_directory_uri() .'/js/map.js');
 wp_enqueue_script('map.api', 'https://maps.googleapis.com/maps/api/js?key='.$googleapi.'&callback=initMap');
